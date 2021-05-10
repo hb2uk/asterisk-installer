@@ -38,6 +38,8 @@ systemctl start httpd.service
 
 adduser asterisk -M -c "Asterisk User"
 
+mkhomedir_helper asterisk
+
 cd /usr/src
 git clone https://github.com/akheron/jansson.git
 cd jansson
