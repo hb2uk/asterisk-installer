@@ -11,6 +11,7 @@ rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 yum remove php-common
 # add php 5.6
 yum install -y php56w php56w-opcache php56w-xml php56w-mcrypt php56w-gd php56w-devel php56w-mysql php56w-intl php56w-mbstring
+yum install -y php php-pdo php-mysqlnd php-mbstring php-pear php-process php-xml php-opcache php-ldap php-intl php-soap php-json
 
 yum -y update
 
