@@ -5,8 +5,11 @@ sudo yum install epel-release gcc-c++ ncurses-devel libxml2-devel wget openssl-d
 pear install Console_Getopt
 
 firewall-cmd --zone=public --add-port=80/tcp --permanent
+firewall-cmd --zone=public --permanent --add-port=4569/udp
+firewall-cmd --zone=public --permanent --add-service={http,https}
+firewall-cmd --zone=public --permanent --add-port=10000-20000/udp
+firewall-cmd --zone=public --permanent --add-service={sip,sips}
 firewall-cmd --reload
-
 # Enable MariaDB
 systemctl enable mariadb.service
 
