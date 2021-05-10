@@ -9,6 +9,8 @@ rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
 yum install php56w-fpm php56w-opcache
 
+yum -y update
+
 pear install Console_Getopt
 
 
