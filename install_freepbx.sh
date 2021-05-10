@@ -7,7 +7,10 @@ yum install gnutls-utils
 rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
-yum install php56w-fpm php56w-opcache
+# remove pho 5.4 if its installed
+yum remove php-common
+# add php 5.6
+yum install -y php56w php56w-opcache php56w-xml php56w-mcrypt php56w-gd php56w-devel php56w-mysql php56w-intl php56w-mbstring
 
 yum -y update
 
