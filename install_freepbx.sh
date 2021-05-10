@@ -25,7 +25,7 @@ wget http://downloads.asterisk.org/pub/telephony/dahdi-linux-complete/dahdi-linu
 wget http://downloads.asterisk.org/pub/telephony/libpri/libpri-current.tar.gz
 wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-15-current.tar.gz
 wget -O jansson.tar.gz https://github.com/akheron/jansson/archive/v2.7.tar.gz
-wget http://www.pjsip.org/release/2.4/pjproject-2.4.tar.bz2
+wget http://www.pjsip.org/release/2.10/pjproject-2.10.tar.bz2
 
 cd /usr/src
 tar -xjvf pjproject-2.10.tar.bz2
