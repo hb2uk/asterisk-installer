@@ -31,7 +31,8 @@ git clone https://github.com/akheron/jansson.git
 cd jansson
 autoreconf -i
 ./configure --prefix=/usr/
-make && make install
+make
+make install
 
 cd /usr/src/ 
 export VER="2.10"
@@ -50,7 +51,7 @@ tar xvfz asterisk-16-current.tar.gz
 rm -f asterisk-16-current.tar.gz
 cd asterisk-*
 contrib/scripts/install_prereq install
-./configure --libdir=/usr/lib64 --with-pjproject-bundled
+./configure --libdir=/usr/lib64** --with-jansson-bundled
 contrib/scripts/get_mp3_source.sh
 make menuselect
 
