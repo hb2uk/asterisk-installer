@@ -4,6 +4,11 @@ yum -y install lynx mariadb-server mariadb php php-mysql php-mbstring tftp-serve
 yum install epel-release gcc-c++ ncurses-devel libxml2-devel wget openssl-devel newt-devel kernel-devel-`uname -r` sqlite-devel libuuid-devel gtk2-devel jansson-devel binutils-devel bzip2 patch libedit libedit-devel
 yum install gnutls-utils
 
+rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+
+yum install php56w-fpm php56w-opcache
+
 pear install Console_Getopt
 
 
