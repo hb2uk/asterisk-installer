@@ -58,7 +58,7 @@ tar xvfz asterisk-16-current.tar.gz
 rm -f asterisk-16-current.tar.gz
 cd asterisk-*
 contrib/scripts/install_prereq install
-./configure --libdir=/usr/lib64** --with-jansson-bundled
+./configure --libdir=/usr/lib64 --with-jansson-bundled
 contrib/scripts/get_mp3_source.sh
 make menuselect
 
